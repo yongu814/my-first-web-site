@@ -1,0 +1,50 @@
+body{
+    margin:0;
+}
+a {
+    color:black;
+    text-decoration:none;
+}
+h1 {
+    font-size:60px;
+    text-align:center;
+    border-bottom:solid 1px rgba(128, 128, 128, 0.3);
+    margin:0;
+    padding:20px;
+}
+ol{
+    border-right:solid 1px rgba(128,128,128,0.3);
+    width:100px;
+    margin:0;
+    padding:20px; 
+    list-style:none;
+}
+#grid{
+    display:grid;
+    grid-template-columns: 150px 1fr;
+}
+#grid ol{
+    padding-left:33px;
+}
+#article{
+    padding-left:33px;
+}
+#article img{
+    width:80%;
+}
+#article p{
+    width:70%;
+    font-size: 16px;
+}
+@media(max-width:800px){
+    #grid{
+    display:block;
+    }
+    ol{
+    border-right:none;
+    }
+    h1{
+    border-bottom:none;
+    }
+
+}
